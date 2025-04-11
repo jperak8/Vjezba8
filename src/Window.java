@@ -102,20 +102,20 @@ public class Window {
 
     public void draw(int x1, int y1, int x2, int y2) {
 
-        for (int i = 0; i < x2 - x1; i++) {
+        for (int i = 0; i < width(x2, x1); i++) {
             System.out.print("*");
         }
         System.out.println();
 
-        for (int i = 0; i < (y2 - y1) - 2; i++) {
+        for (int i = 0; i < height(y2, y1) - 2; i++) {
             System.out.print("*");
-            for (int j = 0; j < (x2 - x1) - 2; j++) {
+            for (int j = 0; j < width(x2, x1) - 2; j++) {
                 System.out.print(" ");
             }
             System.out.println("*");
         }
 
-        for (int i = 0; i < x2 - x1; i++) {
+        for (int i = 0; i < width(x2, x1); i++) {
             System.out.print("*");
         }
         System.out.println();
